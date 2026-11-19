@@ -36,68 +36,68 @@
   "partners": [
     {
       "name": "Casa da Refrigeração",
-      "logo": "assets/parcerias-referencia.webp",
+      "logo": "assets/logos-parceiros.webp",
       "index": 0,
       "region": [
-        35,
-        10,
-        130,
-        58
+        0.0,
+        217.2,
+        362.0,
+        275.12
       ]
     },
     {
       "name": "Natan Refrigeração",
-      "logo": "assets/parcerias-referencia.webp",
+      "logo": "assets/logos-parceiros.webp",
       "index": 1,
       "region": [
-        447,
-        87,
-        96,
-        57
+        380,
+        217.2,
+        300,
+        275.12
       ]
     },
     {
       "name": "SINPOL/SE",
-      "logo": "assets/parcerias-referencia.webp",
+      "logo": "assets/logos-parceiros.webp",
       "index": 2,
       "region": [
-        653,
-        117,
-        184,
-        51
+        724.0,
+        217.2,
+        362.0,
+        275.12
       ]
     },
     {
       "name": "Universidade Federal de Sergipe",
-      "logo": "assets/parcerias-referencia.webp",
+      "logo": "assets/logos-parceiros.webp",
       "index": 3,
       "region": [
-        155,
-        445,
-        123,
-        50
+        1086.0,
+        217.2,
+        362.0,
+        275.12
       ]
     },
     {
       "name": "Universidade Tiradentes",
-      "logo": "assets/parcerias-referencia.webp",
+      "logo": "assets/logos-parceiros.webp",
       "index": 4,
       "region": [
-        429,
-        441,
-        104,
-        49
+        1448.0,
+        217.2,
+        362.0,
+        275.12
       ]
     },
     {
       "name": "Coca-Cola",
-      "logo": "assets/parcerias-referencia.webp",
+      "logo": "assets/logos-parceiros.webp",
       "index": 5,
       "region": [
-        717,
-        432,
-        112,
-        42
+        1810.0,
+        217.2,
+        362.0,
+        275.12
       ]
     }
   ]
