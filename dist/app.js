@@ -10,3 +10,10 @@ document.querySelector('#year').textContent=new Date().getFullYear();document.qu
 
 const partners=content.partners||[];const partnerTrack=document.querySelector('#partners-grid');
 for(let copy=0;copy<2;copy++){const group=document.createElement('div');group.className='partners-group';if(copy)group.setAttribute('aria-hidden','true');for(const item of partners){const figure=document.createElement('figure');figure.className='partner';const frame=document.createElement('div');frame.className='partner-logo';const [x,y,w,h]=item.region;const viewport=document.createElement('div');viewport.className='partner-crop';viewport.style.aspectRatio=`${w}/${h}`;const img=document.createElement('img');img.src=item.logo;img.alt=copy?'':`Logo ${item.name}`;img.style.width=`${2172/w*100}%`;img.style.left=`${-x/w*100}%`;img.style.top=`${-y/h*100}%`;viewport.append(img);frame.append(viewport);figure.append(frame);group.append(figure);}partnerTrack.append(group);}
+
+// Touch has no persistent hover: pause only while a finger is held down.
+const movingStrips=[...document.querySelectorAll('.partners-carousel,.equipment-strip')];
+const resumeStrips=()=>movingStrips.forEach(strip=>strip.classList.remove('is-touching'));
+for(const strip of movingStrips){strip.addEventListener('pointerdown',event=>{if(event.pointerType==='touch'||event.pointerType==='pen')strip.classList.add('is-touching');},{passive:true});strip.addEventListener('pointerleave',resumeStrips,{passive:true});}
+for(const event of ['pointerup','pointercancel','touchend','touchcancel'])window.addEventListener(event,resumeStrips,{passive:true,capture:true});
+window.addEventListener('blur',resumeStrips);document.addEventListener('visibilitychange',resumeStrips);
